@@ -11,8 +11,11 @@ public class Main {
 //        negativeNumber(); //Задача7
 //        doubleString(); //Задача8
 //        highGradeYear(); //Задача9
-        replacementArray(); //Задача10
-
+//        replacementArray(); //Задача10
+//        newArray();  //Задача11
+//        multArray();  //Задача12
+//        squareTableArray();  //Задача13
+        initialValueArray();  //Задача14
     }
 
 //    **********************************************TASK_1**************************************************************
@@ -115,7 +118,6 @@ public class Main {
     //        **********************************************TASK_10**********************************************************
     public static void replacementArray(){
         int [] arr = { 1, 1, 0, 0, 1, 0, 1, 1, 0, 0 };
-          System.out.println(Arrays.toString(arr));
         for (int i=0; i<arr.length; i++){
         if (arr[i]==1)
         arr[i] = 0;
@@ -123,4 +125,46 @@ public class Main {
         arr[i] = 1;}
         System.out.println(Arrays.toString(arr));
     }
+    //        **********************************************TASK_11**********************************************************
+    public static void newArray(){
+        int [] arr = new int[100];
+        for (int i=0; i<arr.length; i++){
+            arr[i] = i+1;
+        }
+        System.out.println(Arrays.toString(arr));
     }
+    //        **********************************************TASK_12**********************************************************
+    public static void multArray(){
+        int [] arr = { 1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1 };
+        for (int i=0; i<arr.length; i++){
+            if (arr[i]<6)
+            arr[i] = arr[i]*2;
+        }
+        System.out.println(Arrays.toString(arr));
+    }
+    //        **********************************************TASK_13**********************************************************
+    public static void squareTableArray(){
+        int [] [] table = new int [30] [30];
+        for (int t=0; t< table.length; ++t) {
+            for (int i = 0; i < table.length; ++i) {
+                if (t==i)
+                    table[t][i] = 1;
+                else
+                    table[t][i] = 0;
+                System.out.print(table[t][i] + " ");
+            }
+            System.out.println();
+        }
+    }
+    //        **********************************************TASK_11**********************************************************
+    public static void initialValueArray(){
+       int len = 10;
+       int initialValue = 333;
+        int [] arr = new int[len];
+        for (int i=0; i<arr.length; i++){
+            arr[i] = initialValue;
+        }
+        System.out.println(Arrays.toString(arr));
+    }
+}
+
