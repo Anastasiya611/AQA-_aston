@@ -1,15 +1,24 @@
-public abstract class Form {
+public interface Shape {
+    void calculateSquare();
+    void calculatePerimeter();
+    double getSquare();
+    double getPerimeter();
+}
+
+abstract class Form implements Shape {
     protected String name;
     protected double square;
     protected double perimeter;
     protected String backgroundColor;
     protected String borderColor;
 
-    double getSquare() {
+    @Override
+    public double getSquare() {
         return square;
     }
 
-    double getPerimeter() {
+    @Override
+    public double getPerimeter() {
         return perimeter;
     }
 
