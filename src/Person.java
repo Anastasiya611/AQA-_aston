@@ -15,38 +15,12 @@ public class Person {
             this.salary = salary;
             this.age = age;
         }
-
-        public Persons() {
-
-        }
-
-        void info() {
-            System.out.println("ФИО:" + name + " Должность:" + position + " email:" + email + " Телефон:" + phone + " Зарплата:" + salary + " Возраст:" + age);
+        public String toString() {
+            return "ФИО: " + name + ", Должность: " + position + ", Email: " + email + ", Телефон: " + phone + ", Зарплата: " + salary + ", Возраст: " + age;
         }
     }
 
     public static class Main {
-        public static void main(String[] args) {
-            Persons person1 = new Persons();
-            Persons person2 = new Persons();
-            person1.name = "Иванов Иван Иванович";
-            person1.position = "Директор";
-            person1.email = "Ivanov.mail.ru";
-            person1.phone = 343464;
-            person1.salary = 30000;
-            person1.age = 20;
-            person2.name = "Петров Петр Петрович";
-            person2.position = "Менеджер";
-            person2.email = "Petrov.mail.ru";
-            person2.phone = 343463;
-            person2.salary = 20000;
-            person2.age = 35;
-            person1.info();
-            person2.info();
-        }
-    }
-
-    public static class ArrayPersons {
         public static void main(String[] args) {
             Persons[] persArray = new Persons[5];
             persArray[0] = new Persons("Иванов Иван", "Директор", "Ivanov.mail.ru", 333333, 30000, 30);
@@ -54,11 +28,13 @@ public class Person {
             persArray[2] = new Persons("Смирнов Андрей", "Бухгалтер", "Smirnov.mail.ru", 333321, 20000, 27);
             persArray[3] = new Persons("Романов Роман", "Кладовщик", "Roman.mail.ru", 333334, 18000, 28);
             persArray[4] = new Persons("Любимова Любовь", "Менеджер", "Love.mail.ru", 333321, 15000, 32);
+            printPersonsInfo(persArray);
+        }
+        public static void printPersonsInfo(Persons[] persons) {
+            for (Persons person : persons) {
+                System.out.println(person);
+            }
         }
     }
 }
-
-
-
-
 
