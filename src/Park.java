@@ -1,27 +1,33 @@
 import java.text.MessageFormat;
 
 public class Park {
-    String name;
-    String time;
-    int price;
+    public static void main(String[] args) {
+        createAndPrintAttractions();
+    }
 
-    static class infoPark {
-        public static void main(String[] args) {
-            Park rollerCoaster = new Park();
-            Park bigWheel = new Park();
-            Park funhouse = new Park();
-            rollerCoaster.name = "Roller Coaster";
-            rollerCoaster.time = "17:00";
-            rollerCoaster.price = 100;
-            bigWheel.name = "Big Wheel";
-            bigWheel.time = "16:00";
-            bigWheel.price = 150;
-            funhouse.name = "Funhouse";
-            funhouse.time = "18:00";
-            funhouse.price = 135;
-            System.out.println(MessageFormat.format("{0} {1} {2}", rollerCoaster.name, rollerCoaster.time, rollerCoaster.price));
-            System.out.println(MessageFormat.format("{0} {1} {2}", bigWheel.name, bigWheel.time, bigWheel.price));
-            System.out.println(MessageFormat.format("{0} {1} {2}", funhouse.name, funhouse.time, funhouse.price));
+    private static void createAndPrintAttractions() {
+        Attraction rollerCoaster = new Attraction("Roller Coaster", "17:00", 100);
+        Attraction bigWheel = new Attraction("Big Wheel", "16:00", 150);
+        Attraction funhouse = new Attraction("Funhouse", "18:00", 135);
+
+        System.out.println(rollerCoaster);
+        System.out.println(bigWheel);
+        System.out.println(funhouse);
+    }
+
+    public static class Attraction {
+        private final String name;
+        private final String time;
+        private final int price;
+
+        public Attraction(String name, String time, int price) {
+            this.name = name;
+            this.time = time;
+            this.price = price;
+        }
+
+        public String toString() {
+            return MessageFormat.format("{0} {1} {2}", name, time, price);
         }
     }
 }

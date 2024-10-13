@@ -1,6 +1,6 @@
 public class Person {
     public static class Persons {
-        static String name;
+        String name;
         String position;
         String email;
         int phone;
@@ -25,23 +25,25 @@ public class Person {
         }
     }
 
-    public void main(String[] args) {
-        Persons person1 = new Persons();
-        Persons person2 = new Persons();
-        person1.name = "Иванов Иван Иванович";
-        person1.position = "Директор";
-        person1.email = "Ivanov.mail.ru";
-        person1.phone = 343464;
-        person1.salary = 30000;
-        person1.age = 20;
-        person2.name = "Петров Петр Петрович";
-        person2.position = "Менеджер";
-        person2.email = "Petrov.mail.ru";
-        person2.phone = 343463;
-        person2.salary = 20000;
-        person2.age = 35;
-        person1.info();
-        person2.info();
+    public static class Main {
+        public static void main(String[] args) {
+            Persons person1 = new Persons();
+            Persons person2 = new Persons();
+            person1.name = "Иванов Иван Иванович";
+            person1.position = "Директор";
+            person1.email = "Ivanov.mail.ru";
+            person1.phone = 343464;
+            person1.salary = 30000;
+            person1.age = 20;
+            person2.name = "Петров Петр Петрович";
+            person2.position = "Менеджер";
+            person2.email = "Petrov.mail.ru";
+            person2.phone = 343463;
+            person2.salary = 20000;
+            person2.age = 35;
+            person1.info();
+            person2.info();
+        }
     }
 
     public static class ArrayPersons {
