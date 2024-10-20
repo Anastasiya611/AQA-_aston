@@ -11,7 +11,7 @@ public class Factorial {
             result = 1;
         } else {
             for (int i = 1; i <= n; i++) {
-                result *= i;
+                result *=i;
             }
         }
         System.out.println("Факториал числа " + n + " равен: " + result);
