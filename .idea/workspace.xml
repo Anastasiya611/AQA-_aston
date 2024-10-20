@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d1dcd4fe-a68b-4b1e-b537-615c0c66b57b" name="Changes" comment="finish">
+      <change afterPath="$PROJECT_DIR$/untitled/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/src/main/resources/META-INF/maven/archetype.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/src/main/resources/archetype-resources/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/src/main/resources/archetype-resources/src/main/java/Factorial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/src/main/resources/archetype-resources/src/test/java/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWork_AQA.iml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Lesson_5" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Anastasiya611&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Anastasiya611/AQA-_aston.git&quot;,
+    &quot;accountId&quot;: &quot;2cb5ae76-adb4-452f-86db-1b868f9fd162&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2m3ts95Eb1KOIWqEr37amr9RU7Y" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Animal$Dog.executor": "Run",
+    "Application.Circle$Main.executor": "Run",
+    "Application.Circle$Rect$Main.executor": "Run",
+    "Application.Circle.executor": "Run",
+    "Application.Dog.executor": "Run",
+    "Application.Form$Main.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.Park$infoPark.executor": "Run",
+    "Application.Park.executor": "Run",
+    "Application.Person$ArrayPersons.executor": "Run",
+    "Application.Person$Main.executor": "Run",
+    "Application.Phone.executor": "Run",
+    "Application.Rect.executor": "Run",
+    "Application.Word.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Lesson__6__junit__5",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/HomeWork_AQA",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.language.and.region"
+  },
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "module"
+    ]
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.Phone">
+    <configuration name="Park$infoPark" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Park$infoPark" />
+      <module name="HomeWork_AQA" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Person$ArrayPersons" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Person$ArrayPersons" />
+      <module name="HomeWork_AQA" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Person$Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Person$Main" />
+      <module name="HomeWork_AQA" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Phone" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Phone" />
+      <module name="HomeWork_AQA" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Word" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Word" />
+      <module name="HomeWork_AQA" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Word" />
+        <item itemvalue="Application.Phone" />
+        <item itemvalue="Application.Person$Main" />
+        <item itemvalue="Application.Person$ArrayPersons" />
+        <item itemvalue="Application.Park$infoPark" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d1dcd4fe-a68b-4b1e-b537-615c0c66b57b" name="Changes" comment="" />
+      <created>1726317293542</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1726317293542</updated>
+    </task>
+    <task id="LOCAL-00001" summary="task1&amp;2">
+      <option name="closed" value="true" />
+      <created>1726336342045</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1726336342045</updated>
+    </task>
+    <task id="LOCAL-00002" summary="task 1-8">
+      <option name="closed" value="true" />
+      <created>1726339756138</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1726339756138</updated>
+    </task>
+    <task id="LOCAL-00003" summary="task 1-10">
+      <option name="closed" value="true" />
+      <created>1726346034512</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1726346034512</updated>
+    </task>
+    <task id="LOCAL-00004" summary="task 1-14">
+      <option name="closed" value="true" />
+      <created>1726389099205</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1726389099205</updated>
+    </task>
+    <task id="LOCAL-00005" summary="finish">
+      <option name="closed" value="true" />
+      <created>1726389411037</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1726389411037</updated>
+    </task>
+    <task id="LOCAL-00006" summary="finish">
+      <option name="closed" value="true" />
+      <created>1726389549195</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1726389549195</updated>
+    </task>
+    <task id="LOCAL-00007" summary="corrected">
+      <option name="closed" value="true" />
+      <created>1727891035572</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1727891035572</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Person,park">
+      <option name="closed" value="true" />
+      <created>1728194879930</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1728194879930</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Person,park">
+      <option name="closed" value="true" />
+      <created>1728194886872</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1728194886872</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Animal">
+      <option name="closed" value="true" />
+      <created>1728326936616</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1728326936616</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Animal &amp; form">
+      <option name="closed" value="true" />
+      <created>1728405897238</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1728405897238</updated>
+    </task>
+    <task id="LOCAL-00012" summary="xml">
+      <option name="closed" value="true" />
+      <created>1728406085536</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1728406085536</updated>
+    </task>
+    <task id="LOCAL-00013" summary="finish">
+      <option name="closed" value="true" />
+      <created>1728406130230</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1728406130230</updated>
+    </task>
+    <task id="LOCAL-00014" summary="finish">
+      <option name="closed" value="true" />
+      <created>1728406592588</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1728406592588</updated>
+    </task>
+    <task id="LOCAL-00015" summary="finish">
+      <option name="closed" value="true" />
+      <created>1728823915685</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1728823915685</updated>
+    </task>
+    <task id="LOCAL-00016" summary="redact">
+      <option name="closed" value="true" />
+      <created>1728833189453</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1728833189453</updated>
+    </task>
+    <task id="LOCAL-00017" summary="redact">
+      <option name="closed" value="true" />
+      <created>1728833593213</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1728833593213</updated>
+    </task>
+    <task id="LOCAL-00018" summary="redact">
+      <option name="closed" value="true" />
+      <created>1728835205074</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1728835205074</updated>
+    </task>
+    <task id="LOCAL-00019" summary="finish">
+      <option name="closed" value="true" />
+      <created>1729002632392</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1729002632392</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="task1&amp;2" />
+    <MESSAGE value="task 1-8" />
+    <MESSAGE value="task 1-10" />
+    <MESSAGE value="task 1-14" />
+    <MESSAGE value="corrected" />
+    <MESSAGE value="Person,park" />
+    <MESSAGE value="Animal" />
+    <MESSAGE value="Animal &amp; form" />
+    <MESSAGE value="xml" />
+    <MESSAGE value="redact" />
+    <MESSAGE value="finish" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish" />
+  </component>
+</project>
