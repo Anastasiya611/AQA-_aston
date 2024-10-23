@@ -1,12 +1,11 @@
 import org.junit.jupiter.api.*;
-import org.openqa.selenium.TimeoutException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.By;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 class TestClass {
     WebDriver driver;
@@ -20,7 +19,10 @@ class TestClass {
     void setupTest() {
         driver = new ChromeDriver();
         driver.get("https://www.mts.by/");
-        driver.findElement(By.id("cookie-agree")).click();
+        WebElement cookie = driver.findElement(By.id("cookie-agree"));
+           if (cookie.isDisplayed()) {
+            driver.findElement(By.id("cookie-agree")).click();
+        }
     }
 
     @AfterEach
@@ -65,17 +67,24 @@ class TestClass {
     }
 
     @Test
-    public void testPhoneSumEmail() {
+    public void testPay() {
         driver.findElement(By.id("connection-phone")).sendKeys("297777777");
         driver.findElement(By.id("connection-sum")).sendKeys("100");
         driver.findElement(By.id("connection-email")).sendKeys("Natuwka611@gmail.com");
-        driver.findElement(By.id("pay-connection")).click();
-        WebDriverWait wait = new WebDriverWait(driver, 10);
-        String urlPay = driver.getCurrentUrl();
-        if (urlPay.contains("https://www.mts.by/")) {
+        driver.findElement(By.xpath("//*[@id=\"pay-connection\"]/button")).click();
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        WebDriverWait wait = new WebDriverWait(driver, (10));
+
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("bepaid-iframe")));
+        WebElement frame = driver.findElement(By.className("bepaid-iframe"));
+        driver.switchTo().frame(frame);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/app-root/div/div/div/app-payment-container/section/div/app-card-page/div/div[1]/app-card-input/form/div[1]/div[1]/app-input/div/div/div[1]/label")));
+       WebElement payTitle = driver.findElement(By.xpath("/html/body/app-root/div/div/div/app-payment-container/section/div/app-card-page/div/div[1]/app-card-input/form/div[1]/div[1]/app-input/div/div/div[1]/label"));
+       if (payTitle.isDisplayed()) {
             System.out.println("Кнопка работает.");
-        } else {
-            System.out.println("Кнопка не работает.");
-        }
+            }
     }
 }
+
+
