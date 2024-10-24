@@ -5,7 +5,6 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.time.Duration;
 
 class TestClass {
     WebDriver driver;
@@ -73,7 +72,6 @@ class TestClass {
         driver.findElement(By.id("connection-email")).sendKeys("Natuwka611@gmail.com");
         driver.findElement(By.xpath("//*[@id=\"pay-connection\"]/button")).click();
 
-        JavascriptExecutor js = (JavascriptExecutor) driver;
         WebDriverWait wait = new WebDriverWait(driver, (10));
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("bepaid-iframe")));
