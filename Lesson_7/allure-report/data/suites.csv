@@ -1,0 +1,2 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"Тест проверяет корректность перехода на страницу информации о порядке оплаты.","6509","testUrlInfoServis()","","Sun Nov 03 16:10:16 SAMT 2024","passed","Sun Nov 03 16:10:23 SAMT 2024","","org.example.TestClass","org.example.TestClass","testUrlInfoServis"
