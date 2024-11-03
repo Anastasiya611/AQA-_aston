@@ -1,6 +1,5 @@
-package org.example;
+package org;
 
-import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -15,11 +14,12 @@ public class MainPage {
     @FindBy(id = "cookie-agree")
     private WebElement cookieAgreeButton;
 
-    @FindBy(css = "#pay-section > div > div > div.col-12.col-xl-8 > section > div > h2")
+    @FindBy(css = "#pay-section .col-12.col-xl-8 > section > div > h2")
     private WebElement titleBlock;
 
-    @FindBy(xpath = "//*[@id='pay-section']/div/div/div[2]/section/div/a")
+    @FindBy(css = "#pay-section a")
     private WebElement infoServiceLink;
+
 
     @FindBy(id = "connection-phone")
     private WebElement phoneInputField;
@@ -41,17 +41,19 @@ public class MainPage {
 
     @FindBy(className = "select__header")
     private WebElement paySection;
-    @FindBy(xpath = "//*[@id=\"pay-section\"]/div/div/div[2]/section/div/div[1]/div[1]/div[2]/ul/li[1]/p")
+    @FindBy(xpath = "//*[@id='pay-section']//ul/li[1]/p")
     private WebElement communicationServices;
-    @FindBy(xpath = "//*[@id=\"pay-section\"]/div/div/div[2]/section/div/div[1]/div[1]/div[2]/ul/li[2]/p")
+
+    @FindBy(xpath = "//*[@id='pay-section']//ul/li[2]/p")
     private WebElement homeInternet;
-    @FindBy(xpath = "//*[@id=\"pay-section\"]/div/div/div[2]/section/div/div[1]/div[1]/div[2]/ul/li[3]/p")
+
+    @FindBy(xpath = "//*[@id='pay-section']//ul/li[3]/p")
     private WebElement installment;
-    @FindBy(xpath = "//*[@id=\"pay-section\"]/div/div/div[2]/section/div/div[1]/div[1]/div[2]/ul/li[4]/p")
+
+    @FindBy(xpath = "//*[@id='pay-section']//ul/li[4]/p")
     private WebElement arrears;
 
 
-    // Конструктор класса
     public MainPage(WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, 10);
@@ -132,22 +134,6 @@ public class MainPage {
     public void arrearsClick() {
         arrears.click();
     }
-
-    public void testPaymentOptions() {
-
-        String expectedSumField = "Сумма";
-        String actualSumField = getSum();
-        Assertions.assertEquals(expectedSumField, actualSumField);
-        System.out.println("Отображение Сумма верно");
-
-        String expectedEmailField = "E-mail для отправки чека";
-        String actualEmailField = getEmail();
-        Assertions.assertEquals(expectedEmailField, actualEmailField);
-        System.out.println("Отображение Email верно");
-
-    }
-
-
 }
 
 
