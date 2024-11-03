@@ -56,7 +56,6 @@ class TestClass {
                 WebDriverWait wait = new WebDriverWait(driver, 10);
                 WebElement imageElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//img[@alt='" + expectedAlt + "']")));
                 assert (imageElement.isDisplayed());
-                  //  System.out.println("Изображение '" + expectedAlt + "' присутствует на странице.");
             } catch (TimeoutException e) {
                 System.out.println("Изображение '" + expectedAlt + "' отсутствует.");
             }
@@ -68,10 +67,6 @@ class TestClass {
         mainPage.clickOnInfoServiceLink();
         String currentUrl = driver.getCurrentUrl();
         assert (currentUrl.equals("https://www.mts.by/help/poryadok-oplaty-i-bezopasnost-internet-platezhey/"));
-            /* {System.out.println("Ссылка работает.");
-        } else {
-            System.out.println("Ссылка не работает.");
-        }*/
     }
 
     @Test
@@ -87,43 +82,36 @@ class TestClass {
 
 
         assert (paymentPage.isPaymentTitleVisible()); {
-        //    System.out.println("Кнопка работает.");
+
         }
 
         String expectedpayDescriptionCost = "100.00 BYN";
         String actualpayDescriptionCost = paymentPage.getPayDescriptionCostText();
         Assertions.assertEquals(expectedpayDescriptionCost, actualpayDescriptionCost);
-       // System.out.println("Отображение 100.00 BYN верно");
 
         String expectedColoredDisabled = "Оплатить 100.00 BYN";
         String actualColoredDisabled = paymentPage.getColoredDisabledText();
         Assertions.assertEquals(expectedColoredDisabled, actualColoredDisabled);
-       // System.out.println("Отображение Оплатить 100.00 BYN верно");
 
         String expectedPayDescriptionText = "Оплата: Услуги связи Номер:375297777777";
         String actualPayDescriptionText = paymentPage.getPayDescriptionTextText();
         Assertions.assertEquals(expectedPayDescriptionText, actualPayDescriptionText);
-        //System.out.println("Отображение Номер:375297777777 верно");
 
         String expectedNumberCart = "Номер карты";
         String actualNumberCart = paymentPage.getNumberCartText();
         Assertions.assertEquals(expectedNumberCart, actualNumberCart);
-       // System.out.println("Отображение Номер карты верно");
 
         String expectedValidityPeriod = "Срок действия";
         String actualValidityPeriod = paymentPage.getValidityPeriodText();
         Assertions.assertEquals(expectedValidityPeriod, actualValidityPeriod);
-       // System.out.println("Отображение Срок действия верно");
 
         String expectedCvc = "CVC";
         String actualCvc = paymentPage.getCvcText();
         Assertions.assertEquals(expectedCvc, actualCvc);
-       // System.out.println("Отображение CVC верно");
 
         String expectedNamePerson = "Имя держателя (как на карте)";
         String actualNamePerson = paymentPage.getNamePersonText();
         Assertions.assertEquals(expectedNamePerson, actualNamePerson);
-        //System.out.println("Отображение Имя держателя верно");
 
         paymentPage.displayedVisa();
         paymentPage.displayedMastercard();
@@ -139,7 +127,6 @@ class TestClass {
         String expectedEmailField = "E-mail для отправки чека";
         String actualEmailField = mainPage.getEmail();
         Assertions.assertEquals(expectedEmailField, actualEmailField);
-
     }
 
     @Test
@@ -159,7 +146,6 @@ class TestClass {
         String expectedPhoneField = "Номер телефона";
         String actualPhoneField = mainPage.getPhone();
         Assertions.assertEquals(expectedPhoneField, actualPhoneField);
-        //System.out.println("Отображение Номер телефона верно");
         testPaymentOptions();
     }
 
@@ -170,7 +156,6 @@ class TestClass {
         String expectedScoreInstalment = "Номер счета на 44";
         String actualScoreInstalment = mainPage.getScoreInstalment();
         Assertions.assertEquals(expectedScoreInstalment, actualScoreInstalment);
-        //System.out.println("Отображение Номер счета на 44 верно");
         testPaymentOptions();
     }
 
@@ -181,7 +166,6 @@ class TestClass {
         String expectedScoreArrears = "Номер счета на 2073";
         String actualScoreArrears = mainPage.getScoreArrears();
         Assertions.assertEquals(expectedScoreArrears, actualScoreArrears);
-        //System.out.println("Отображение Номер счета на 44 верно");
         testPaymentOptions();
     }
 }
